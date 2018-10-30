@@ -37,7 +37,6 @@ class ExchangeService
 
         if (empty($currencies)) {
             throw new Exception('No currencies in database');
-
         }
 
         foreach ($currencies as $baseCurrency) {
