@@ -18,7 +18,7 @@ class InitDb extends Migration
             CREATE TABLE exchanges (
                 from_currency CHAR(3) NOT NULL,
                 to_currency CHAR(3) NOT NULL,
-                rate DECIMAL NOT NULl,
+                rate DECIMAL(4,2) NOT NULl,
                 FOREIGN KEY (from_currency) REFERENCES currencies(name),
                 FOREIGN KEY (to_currency) REFERENCES currencies(name),
                 UNIQUE unique_index(from_currency, to_currency)

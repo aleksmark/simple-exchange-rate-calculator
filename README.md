@@ -2,6 +2,8 @@
 
 Fetch the exchange rates from the API and store it in database
 
+![alt text](https://github.com/aleksmark/simple-exchange-rate-calculator/blob/master/public/screen.png)
+
 ## Environment
 
 - PHP 7.0
@@ -45,6 +47,4 @@ $ ./post-deploy.sh
 
 ## Usage
 
-Access the laravel app on your local machine
-
-http://localhost
+docker exec -it web php artisan exchange:get-exchange-rates
